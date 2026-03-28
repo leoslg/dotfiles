@@ -144,7 +144,7 @@ cp "$HOME/dotfiles/.zsh/completions/uv.zsh" "$HOME/.zsh/completions/uv.zsh"
 # =============================================================================
 if [ "$SHELL" != "$(which zsh)" ]; then
   log "Trocando shell padrão para zsh..."
-  chsh -s $(which zsh)
+  sudo usermod -s $(which zsh) $USER
 fi
 
 # =============================================================================
