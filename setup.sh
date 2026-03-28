@@ -129,7 +129,6 @@ log "Aplicando dotfiles..."
 cp "$HOME/dotfiles/.zshrc" "$HOME/.zshrc"
 cp "$HOME/dotfiles/.profile" "$HOME/.profile"
 cp "$HOME/dotfiles/.gitconfig" "$HOME/.gitconfig"
-cp "$HOME/dotfiles/.npmrc" "$HOME/.npmrc"
 
 [ -f "$HOME/dotfiles/.mcp.json" ] && cp "$HOME/dotfiles/.mcp.json" "$HOME/.mcp.json"
 [ -f "$HOME/dotfiles/.claude.json" ] && cp "$HOME/dotfiles/.claude.json" "$HOME/.claude.json"
