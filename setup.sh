@@ -29,7 +29,6 @@ sudo apt install -y \
   build-essential \
   zsh \
   direnv \
-  fasd \
   htop \
   vim nano \
   screen \
@@ -39,8 +38,6 @@ sudo apt install -y \
   ca-certificates \
   gnupg \
   lsb-release \
-  software-properties-common
-
 # =============================================================================
 # 3. Docker
 # =============================================================================
