@@ -127,7 +127,6 @@ fi
 log "Aplicando dotfiles..."
 
 cp "$HOME/dotfiles/.zshrc" "$HOME/.zshrc"
-cp "$HOME/dotfiles/.p10k.zsh" "$HOME/.p10k.zsh"
 cp "$HOME/dotfiles/.profile" "$HOME/.profile"
 cp "$HOME/dotfiles/.gitconfig" "$HOME/.gitconfig"
 cp "$HOME/dotfiles/.npmrc" "$HOME/.npmrc"
@@ -136,7 +135,7 @@ cp "$HOME/dotfiles/.npmrc" "$HOME/.npmrc"
 [ -f "$HOME/dotfiles/.claude.json" ] && cp "$HOME/dotfiles/.claude.json" "$HOME/.claude.json"
 
 mkdir -p "$HOME/.oh-my-zsh/custom"
-cp "$HOME/dotfiles/.oh-my-zsh/custom/aliases.zsh" "$HOME/.oh-my-zsh/custom/aliases.zsh"
+cp "$HOME/dotfiles/aliases.zsh" "$HOME/.oh-my-zsh/custom/aliases.zsh"
 
 mkdir -p "$HOME/.zsh/completions"
 cp "$HOME/dotfiles/.zsh/completions/uv.zsh" "$HOME/.zsh/completions/uv.zsh"
