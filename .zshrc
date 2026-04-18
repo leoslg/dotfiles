@@ -118,6 +118,9 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 export NPM_PACKAGES="$HOME/.npm-packages"
 export PATH="$NPM_PACKAGES/bin:$PATH"
 
+# Add custom completions directory to fpath (before OMZ sources compinit)
+fpath=($HOME/.zsh/completions $fpath)
+
 # export MANPATH="/usr/local/man:$MANPATH"
 #
 # You may need to manually set your language environment
@@ -129,11 +132,6 @@ export PATH="$NPM_PACKAGES/bin:$PATH"
 # else
 #   export EDITOR='nvim'
 # fi
-
-# Completions
-for file in ~/.zsh/completions/*.zsh; do
-  source "$file"
-done
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"

@@ -1,2 +1,18 @@
 alias dclsaf='docker container ls -a --format "table {{.ID}}\t{{.Image}}"'
 alias dcpsaf='docker container ps -a --format "table {{.ID}}\t{{.Image}}"'
+
+# ======================== tmux ========================
+alias txls='tmux list-sessions'
+alias tls='tmux list-sessions'
+alias ta='tmux attach -t'
+alias tad='tmux attach -d -t'
+alias tns='tmux new-session -s'
+alias tna='tmux new-session -A -s'
+alias tks='tmux kill-session -t'
+alias tksa='tmux kill-session -a'
+alias tksv='tmux kill-server'
+alias tss='tmux switch-client -t'
+alias tsc='tmux choose-tree -s'
+alias tlc='tmux list-commands'
+alias tsh='tmux show-options -g'
+alias tshw='tmux show-window-options'

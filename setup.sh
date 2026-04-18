@@ -139,6 +139,14 @@ cp "$HOME/dotfiles/aliases.zsh" "$HOME/.oh-my-zsh/custom/aliases.zsh"
 mkdir -p "$HOME/.zsh/completions"
 cp "$HOME/dotfiles/.zsh/completions/uv.zsh" "$HOME/.zsh/completions/uv.zsh"
 
+# Modular plugins system (OMZ custom plugins - auto-loaded by OMZ)
+mkdir -p "$HOME/.oh-my-zsh/custom/plugins"
+for plugin in "$HOME/dotfiles/.oh-my-zsh/custom/plugins/"*.zsh; do
+  [ -f "$plugin" ] && cp "$plugin" "$HOME/.oh-my-zsh/custom/plugins/"
+done
+
+mkdir -p "$HOME/.zsh/functions"
+
 # =============================================================================
 # 10. Trocar shell padrão para zsh
 # =============================================================================
